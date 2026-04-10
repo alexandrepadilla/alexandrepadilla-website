@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teaching – Alexandre Padilla</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="site-title">Alexandre Padilla</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cv.html">Curriculum Vitae</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html" class="active">Teaching</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="page-title">Teaching</h2>
+
+    <section class="cv-section">
+      <h3>Undergraduate Courses</h3>
+      <ul class="cv-list">
+        <li>A Citizen's Guide to Economics</li>
+        <li>Principles of Macroeconomics</li>
+        <li>Principles of Microeconomics</li>
+        <li>Intermediate Microeconomics</li>
+        <li>Managerial Economics</li>
+        <li>Political Economy of Immigration</li>
+        <li>Public Finance</li>
+        <li>Industrial Organization &amp; Public Policy</li>
+        <li>History of Economic Thought</li>
+        <li>Law &amp; Economics</li>
+        <li>Economic Policy Analysis</li>
+        <li>Economics of Vice</li>
+      </ul>
+    </section>
+
+    <section class="cv-section">
+      <h3>Graduate Courses</h3>
+      <ul class="cv-list">
+        <li>Managerial Economics</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Alexandre Padilla</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

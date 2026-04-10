@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Alexandre Padilla</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="site-title">Alexandre Padilla</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="cv.html">Curriculum Vitae</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="page-title">Contact</h2>
+
+    <div class="content-block">
+      <p><strong>Email:</strong> <a href="mailto:padilale@msudenver.edu">padilale@msudenver.edu</a></p>
+    </div>
+
+    <div class="content-block">
+      <p><strong>Mailing Address:</strong></p>
+      <address>
+        Metropolitan State University of Denver<br />
+        Economics Department, Campus Box 77<br />
+        P.O. Box 173362<br />
+        Denver, CO 80217-3362
+      </address>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Alexandre Padilla</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

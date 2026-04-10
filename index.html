@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexandre Padilla</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="site-title">Alexandre Padilla</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cv.html">Curriculum Vitae</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="profile-section">
+      <img src="Padilla-Alex-Professional-Picture.jpg" alt="Alexandre Padilla" class="profile-photo" />
+      <div class="profile-info">
+        <h1>Alexandre Padilla</h1>
+        <p class="title">Professor of Economics</p>
+        <p class="institution">Metropolitan State University of Denver</p>
+        <p>
+          Alex Padilla is the Chair of the Economics Department, and the Director of the
+          Exploring Economic Freedom Project at Metropolitan State University of Denver.
+        </p>
+        <div class="contact-links">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:padilale@msudenver.edu">padilale@msudenver.edu</a>
+          </p>
+          <p>
+            <strong>Twitter:</strong>
+            <a href="https://twitter.com/dr_alexpadilla" target="_blank" rel="noopener">@dr_alexpadilla</a>
+          </p>
+          <p>
+            <strong>Google Scholar:</strong>
+            <a href="https://scholar.google.com/citations?hl=en&user=JMCIi2YAAAAJ" target="_blank" rel="noopener">View Profile</a>
+          </p>
+        </div>
+        <p class="education">
+          BS, MA, and Doctorate in Economics from the University of Law, Economics, and Science
+          of Paul Cézanne Aix-Marseille III.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Alexandre Padilla</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
