@@ -3,3 +3,6 @@
 
 # Local CV working files (Word source — PDF is the published version)
 *.docx
+
+# JetBrains IDE config (PyCharm, IntelliJ)
+.idea/
