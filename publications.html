@@ -210,6 +210,18 @@
     <p>&copy; <span id="year"></span> Alexandre Padilla</p>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Number each publication list in reverse: the top (newest) item gets the
+    // highest number, the bottom (oldest) gets [1]. Fully automatic, so adding
+    // an entry at the top shifts every number up on its own.
+    document.querySelectorAll('.pub-list').forEach(function (list) {
+      var items = list.children;
+      var total = items.length;
+      for (var i = 0; i < total; i++) {
+        items[i].setAttribute('data-num', total - i);
+      }
+    });
+  </script>
 </body>
 </html>

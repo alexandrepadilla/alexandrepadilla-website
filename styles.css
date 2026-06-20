@@ -212,13 +212,12 @@ main {
 .pub-list {
   padding-left: 0;
   list-style: none;
-  /* Explicit reversed counter: the implicit `list-item` counter is not
-     advanced by WebKit/Safari when list-style is none, so Chrome and Safari
-     numbered the items differently. An author-defined counter is handled
-     identically by both engines. reversed() auto-starts at the item count and
-     `counter-increment` decrements it, so the newest (first) item shows the
-     highest number. */
-  counter-reset: reversed(pub-item);
+  /* Numbering is assigned by the inline script at the bottom of each page:
+     it sets `data-num` on every <li> so the newest (top) item carries the
+     highest number and the oldest is [1]. This is fully automatic (no
+     hardcoded counts) and renders identically in Chrome and Safari, avoiding
+     the WebKit bug where the implicit `list-item` counter stops incrementing
+     when `list-style: none` is set. */
 }
 
 .pub-list li {
@@ -227,7 +226,6 @@ main {
   border-bottom: 1px solid #f0f0f0;
   line-height: 1.65;
   color: #444;
-  counter-increment: pub-item;
 }
 
 .pub-list li:last-child {
@@ -235,7 +233,7 @@ main {
 }
 
 .pub-list li::before {
-  content: "[" counter(pub-item) "]";
+  content: "[" attr(data-num) "]";
   position: absolute;
   left: 0;
   top: 10px;
